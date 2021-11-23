@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="Checklist" version="1,0">
+    <Checklist.Checklist>
+        <Step ChecklistStepId="PREFLIGHT_GATE">
+            <Page SubjectTT="TT:Initial Checks and Power UP">
+                <Block SubjectTT="TT:Power Up">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Emergency Equipment" ExpectationTT="TT:Checked"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Gear Saftey Pins" ExpectationTT="TT:Onboard"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Documents" ExpectationTT="TT:Checked"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Circuit Breakers" ExpectationTT="TT:Closed"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Hydraulic Pumps" ExpectationTT="TT:Off"/>
+                    </Checkpoint>
+
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:LDG Gear" ExpectationTT="TT:Down"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Spoiler" ExpectationTT="TT:Retracted"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Thrust Levers" ExpectationTT="TT:Idle Shutoff"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Slats/Flaps" ExpectationTT="TT:Agrees with Actual Position"/>
+                    </Checkpoint>
+
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Radar" ExpectationTT="TT:Off"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:ADG Manual Release" ExpectationTT="TT:Stowed"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Emer Flap" ExpectationTT="TT:Normal"/>
+                    </Checkpoint>
+
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:N/W STRG" ExpectationTT="TT:Off"/>
+                    </Checkpoint>
+
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Battery Master" ExpectationTT="TT:On"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:External Power" ExpectationTT="TT:Connected"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:IRS" ExpectationTT="TT:NAV"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:FMS Status" ExpectationTT="TT:Checked"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:FMS Pos Init" ExpectationTT="TT:Complete"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Cockpit Lights" ExpectationTT="TT:As Required"/>
+                    </Checkpoint>
+                </Block>
+
+                <Block SubjectTT="TT:Overhead">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:DC Service" ExpectationTT="TT:Off"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:IDG Disc" ExpectationTT="TT:Off"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:GEN Switches" ExpectationTT="TT:Auto"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Fire Detection Test" ExpectationTT="TT:Complete"/>
+                        <Clue name="TT:Hold for 2 seconds - FIRE SYS OK on EICAS"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:NAV and Logo Lights" ExpectationTT="TT:On"/>
+                        <Clue name="TT:All other eternal lights off"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Fuel Pumps" ExpectationTT="TT:Off"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Fuel XFlow" ExpectationTT="TT:Auto"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Wing A/I Cross Bleed" ExpectationTT="TT:Normal"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Bleed Valves" ExpectationTT="TT:Auto"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:ISOL" ExpectationTT="TT:Open"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Bleed Source" ExpectationTT="TT:Both ENG"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:APU, PWR Fuel" ExpectationTT="TT:On"/>
+                        <Clue name="EICAS: APU SOV OPEN - APU IN BITE - APU RPM and EGT - APU DOOR - APU IN BITE Disappears"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:APU, START/STOP" ExpectationTT="TT:Start"/>
+                        <Clue name="EICAS: APU START - Before 60% Start Light and APU START off - 2 Sec After 99% AVAIL"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:DC and AC Eectrical" ExpectationTT="TT:Check"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:L and R ENG START" ExpectationTT="TT:Off"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:IGNITION, CONT" ExpectationTT="TT:Off"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:EICAS HYD Page" ExpectationTT="TT:Selected"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:STAB TRIM" ExpectationTT="TT:Disengage"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Hydraulic Fluid" ExpectationTT="TT:45-85%"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Hydraulic Pump 1, 3B, and 2" ExpectationTT="TT:On"/>
+                        <Clue name="Check pressures"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:EICAS STAT Page" ExpectationTT="TT:Selected"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:STAB TRIM" ExpectationTT="TT:Engaged"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Hydraulic Pump 1, 3B, and 2" ExpectationTT="TT:Auto"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Pump 3A" ExpectationTT="TT:On"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:ELT" ExpectationTT="TT:ARM/RESET"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:EICAS ECS Page" ExpectationTT="TT:Selected"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:MAN ALT" ExpectationTT="TT:Center Position"/>
+                        <Clue name="Cabin Differential Pressure and Climb Rate are 0 - Cabin Altitude = Departure Airport"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:EMER DEPRESS" ExpectationTT="TT:Off/Guarded"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:PRESS CONTROL" ExpectationTT="TT:Off/Flushed"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:MAN RATE" ExpectationTT="TT:Full DECR"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Packs" ExpectationTT="TT:Auto"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:RECIRC FAN" ExpectationTT="TT:On"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:RAM AIR" ExpectationTT="TT:Off/Guarded"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Temperature Control" ExpectationTT="TT:Auto"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Temperature Knobs" ExpectationTT="TT:As Required"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Wing and Cowl Anti-Ice" ExpectationTT="TT:Off"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:EICAS PRI and STAT pages" ExpectationTT="TT:Selected"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:DET Test" ExpectationTT="TT:Select and Hold 5 Sec"/>
+                        <Clue name="ICE light on - ICE Caution and ADS HEAT TEST OK message"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:DET Test" ExpectationTT="TT:Release"/>
+                        <Clue name="ICE light off - ICE Caution and ADS HEAT TEST OK disapear"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:WSHLD Heat" ExpectationTT="TT:Low"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Probe Heat" ExpectationTT="TT:On"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:EMER LTS" ExpectationTT="TT:Test"/>
+                        <Clue name="TT:EICAS EMER LTS ON and OFF as Appropriate"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:EMER LTS" ExpectationTT="TT:Armed"/>
+                        <Clue name="TT:EICAS EMER LTS ON and OFF as Appropriate"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Standby Compass" ExpectationTT="TT:Checked"/>
+                    </Checkpoint>
+                </Block>
+
+                <Block SubjectTT="TT:Pedestal">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:EICAS Primary and Secondary" ExpectationTT="TT:Checked"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Anti-Skid Test" ExpectationTT="TT:Performed"/>
+                        <Clue name="A/SKID INBD and OUTBD caution messages appear and disapear."/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:MLG BAY" ExpectationTT="TT:OVHT and Hold"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:OVHT TEST" ExpectationTT="TT:WARN FAIL"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Mute Horn" ExpectationTT="TT:Guarded"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:ENGINES, SYNC" ExpectationTT="TT:N1"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:IND LTS" ExpectationTT="TT:As Required"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:GRND PROX" ExpectationTT="TT:Off/Guarded"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Pitche and Roll DISC Handles" ExpectationTT="TT:In/Stowed"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:GND Lift Dumping" ExpectationTT="TT:Auto"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:LH and RH Thrust Reversers" ExpectationTT="TT:Armed"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:TCAS" ExpectationTT="TT:Test"/>
+                        <Clue name="Threat Symbols and VSI displayed."/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Radio Tuning ATC Page" ExpectationTT="TT:ALT ON"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:RTU" ExpectationTT="TT:Off and Flush"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:FMS Tune Inhibit" ExpectationTT="TT:STBY"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Back-up Transponder Mode Selector" ExpectationTT="TT:STBY"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:STAB and MACH TRIM" ExpectationTT="TT:Engage"/>
+                        <Clue name="STAB TRIM and MACH TRIM caution messages disapear."/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Fans" ExpectationTT="TT:NORM"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:AIL and RUD Trim" ExpectationTT="TT:Free and Neutral"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Yaw Damper" ExpectationTT="TT:Engage"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Source Selectors" ExpectationTT="TT:Norm"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Audio Panel" ExpectationTT="TT:Set"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Parking Break" ExpectationTT="TT:Set"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:EMER Flap" ExpectationTT="TT:Normal"/>
+                    </Checkpoint>
+                </Block>
+
+                <Block SubjectTT="TT:Main Panel">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Crew Oxygen and Masks" ExpectationTT="TT:Checked/Quantity"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:STALL PTCT PUSHER" ExpectationTT="TT: On"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Stall Switch" ExpectationTT="TT:Select Momentarily"/>
+                        <Clue name="Stick Shakers - CONT Ignition ON - CONT IGNITION message - Stick Pusher and Stall Switch Flashes"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Display Control" ExpectationTT="TT:Map and Range"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Air Data Reference" ExpectationTT="TT:FMS1"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Display Reversionary Selector" ExpectationTT="TT:NORM"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Clocks" ExpectationTT="TT:Correct"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Cockpit Voice Recorder" ExpectationTT="TT:Test"/>
+                        <Clue name="Hold for 5 seconds and green light appears."/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Displays" ExpectationTT="TT:Checked"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Audio Warning Panel" ExpectationTT="TT:Gaurded and no Lights"/>
+                    </Checkpoint>
+                </Block>
+            </Page>
+            <Page SubjectTT="TT:Flight Preparation">
+                <Block SubjectTT="TT:Payload">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Fuel Loading" ExpectationTT="TT:Began"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Galley Service" ExpectationTT="TT:Began"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Passenger Loading" ExpectationTT="TT:Began"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Pushback Tug" ExpectationTT="TT:Called"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Seatbelts and Smoking/Portable Electronics" ExpectationTT="TT:On"/>
+                    </Checkpoint>
+                </Block>
+
+                <Block SubjectTT="TT:Company and ATC">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Status" ExpectationTT="TT:Checked"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Weather" ExpectationTT="TT:Requested"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Performance Weight and Balance" ExpectationTT="TT:Requested"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:AITS" ExpectationTT="TT:Recived"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:IFR Clearance" ExpectationTT="TT:Recived"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Weather" ExpectationTT="TT:Printed"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Performance Calculations" ExpectationTT="TT:Completed"/>
+                        <Clue name="Takeoff Disance"/>
+                    </Checkpoint>
+                </Block>
+
+                <Block SubjectTT="TT:FMS Setup">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:FPLN" ExpectationTT="TT:Init Complete"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:DEP" ExpectationTT="TT:Complete"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:FPLN" ExpectationTT="TT:Waypoints Input"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:ARR" ExpectationTT="TT:As Required"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:LEGS" ExpectationTT="TT:Verified"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:SEC FPLN" ExpectationTT="TT:As Required"/>
+                        <Clue name="Second Runway or Return to Departure Airport."/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:PERF" ExpectationTT="TT:Complete"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:VNAV" ExpectationTT="TT:Reviewed"/>
+                    </Checkpoint>
+                </Block>
+
+                <Block SubjectTT="TT:Autopilot Setup">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:AP DISC" ExpectationTT="TT:Reset"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Speed" ExpectationTT="TT:Set"/>
+                        <Clue name="V2+1"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:SPD Mode" ExpectationTT="TT:Selected"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:NAV Movde" ExpectationTT="TT:Selected"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Initial Climb Altitude" ExpectationTT="TT:Set"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:CRS" ExpectationTT="TT:As Required"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Flight Directors" ExpectationTT="TT:On"/>
+                    </Checkpoint>
+                </Block>
+
+                <Block SubjectTT="TT:PFD and ND Setup">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:BRGs" ExpectationTT="TT:VOR1 and VOR2"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:ND Format" ExpectationTT="TT:As Required"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:ND Range" ExpectationTT="TT:As Requiered"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:NAV Source" ExpectationTT="TT:FMS"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:VSpeeds" ExpectationTT="TT:Set"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Altimeters" ExpectationTT="TT:Set"/>
+                        <Clue name="Pilot, Backup, and FO."/>
+                    </Checkpoint>
+                </Block>
+
+                <Block SubjectTT="TT:Departure Config (Central Pedestal)">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Boost Pumps" ExpectationTT="TT:On"/>
+                        <Clue name="Center take quantity must not increase by more then 68 kg (150 lbs) after 10 minutes."/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Landing Elevation" ExpectationTT="TT:Set"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:COM1 and COM2" ExpectationTT="TT:As Required"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:NAV1 and NAV2" ExpectationTT="TT:As Required"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:TO Trim" ExpectationTT="TT:Green and Set"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Rudder Trim" ExpectationTT="TT:Zero"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Transponder Code" ExpectationTT="TT:Set"/>
+                    </Checkpoint>
+                </Block>
+
+                <Block SubjectTT="TT:Breifing">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Weather" ExpectationTT="TT:Reviewed"/>
+                        <Clue name="Departure - METAR, Arrival - METAR/TAF, Alternate - METAR/TAF, and Route - SIGMETS/AIRMETS/Wind/Radar"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:NOTAMS" ExpectationTT="TT:Reviewed"/>
+                        <Clue name="Departure, Arrival, Route, and TFR"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Charts" ExpectationTT="TT:Reviewed"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Emergency Procedures" ExpectationTT="TT:Reviewed"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Loading Complete and Ground Service Equipment" ExpectationTT="TT:Confirm Removed"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:PA Welcome and Crew Notice" ExpectationTT="TT:Completed"/>
+                        <Clue name="'Cabin crew prepare for dearture, arm the door slides, and cross check.'"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:FOB" ExpectationTT="TT:Actual and Plan Agree"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Load Sheet" ExpectationTT="TT:Crosschecked"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Doors Closed and Slides Armed" ExpectationTT="TT:Comfirmed"/>
+                    </Checkpoint>
+                </Block>
+            </Page>
+        </Step>
+        <Step ChecklistStepId="PREFLIGHT_TAXI_OUT">
+            <Page SubjectTT="TT:Taxi for Takeoff">
+                <Block SubjectTT="TT:Pushback">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Push and Start Clearance" ExpectationTT="TT:Obtained"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:APU" ExpectationTT="TT:Checked"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:AC Electrics" ExpectationTT="TT:Checked"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:External Power" ExpectationTT="TT:Disconnected"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Fuel" ExpectationTT="TT:Checked"/>
+                        <Clue name="Quantity, distribution, temperature, and pressure.">
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Hydraulic Pumps" ExpectationTT="TT:Auto or On"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Parking Break" ExpectationTT="TT:Set"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Chocks" ExpectationTT="TT:Removed"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Pushback Tug" ExpectationTT="TT:Connected"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Parking Break" ExpectationTT="TT:Off"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Block Time" ExpectationTT="TT:Announced and Recorded"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:FO Chronograph" ExpectationTT="TT:Started"/>
+                    </Checkpoint>
+                </Block>
+
+                <Block SubjectTT="TT:Engine Start">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Beacon Light" ExpectationTT="TT:On"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Engine 2 Start Switch" ExpectationTT="TT:Selected"/>
+                        <Clue name="On Overhead"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Engine 2 Thrust Lever" ExpectationTT="TT:Idle"/>
+                        <Clue name="Unlock with red tab and advance throttle to idle. ITT should rise quickly."/>
+                    </Checkpoint>
+                    <Block SubjectTT="Fuel Feed Check Valve Test (First Flight Only)">
+                        <Checkpoint>
+                            <CheckpointDesc SubjectTT="TT:EICAS Fuel Page" ExpectationTT="TT:Selected"/>
+                        </Checkpoint>
+                        <Checkpoint>
+                            <CheckpointDesc SubjectTT="TT:Both Fuel Pumps" ExpectationTT="TT:Off"/>
+                        </Checkpoint>
+                        <Checkpoint>
+                            <CheckpointDesc SubjectTT="TT:RIGHT FUEL LO PRESS" ExpectationTT="TT:Message Appear"/>
+                        </Checkpoint>
+                        <Checkpoint>
+                            <CheckpointDesc SubjectTT="TT:Fuel Pumps" ExpectationTT="TT:On"/>
+                        </Checkpoint>
+                    </Block>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Engine 2 Start Switch" ExpectationTT="TT:Selected"/>
+                        <Clue name="On Overhead"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Engine 2 Thrust Lever" ExpectationTT="TT:Idle"/>
+                        <Clue name="Unlock with red tab and advance throttle to idle. ITT should rise quickly."/>
+                    </Checkpoint>
+                </Block>
+
+                <Block SubjectTT="TT:After Start">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:EICAS ELEC Page" ExpectationTT="TT:Gen 1 and Gen 2 Supplying Power"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:EICAS ECS Page" ExpectationTT="TT:Bleed Air from Engines"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Anti-Ice" ExpectationTT="TT:As Required"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Probe Heat" ExpectationTT="TT:On"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:APU Start and Stop Switch" ExpectationTT="TT:Off"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:APU PWR Fuel Switch" ExpectationTT="TT:Off"/>
+                    </Checkpoint>
+                </Block>
+
+                <Block SubjectTT="TT:Before Taxi">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:N/W STRG" ExpectationTT="TT:ARMED"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Ground Crew" ExpectationTT="TT:Clear"/>
+                        <Clue name="'Clear to Disconnect' 'Hand Signal on the Left/Right'"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Flaps" ExpectationTT="TT:Set for Takeoff"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Flight Controls:" ExpectationTT="TT:Checked"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Thrust Reversers" ExpectationTT="TT:Armed"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Flight Instruments" ExpectationTT="TT:Checked"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:FMS and NAV Radios" ExpectationTT="TT:As Required/Autotune"/>
+                        <Clue name="Set Auto in FMS RADIO page."/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Brake Tempuatures and Pressures" ExpectationTT="TT:Checked"/>
+                        <Clue name="No BRAKE OVHT nor IB BRAKE PRESS nor OBBRAKE PRESS messages on EICAS. Check HYD page. Press between 1800 and 3200 PSI."/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Ground Crew Clear" ExpectationTT="TT:'Hand Signal/Bypass Pin Sighted'"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Taxi Lights" ExpectationTT="TT:On"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Terrain and Weather Radar:" ExpectationTT="TT:On as Required"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Taxi Clearance" ExpectationTT="TT:Obtained"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Runway Chagned" ExpectationTT="TT:Updated as Required"/>
+                        <Clue name="Charts - Direction - Surface consdtions - Length Available - FMS and MCP - Performance > Thrust: FLX/TOGA > Config: Flaps > Speed:V1, VR, V2"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Departure Change" ExpectationTT="TT:Updated as Required"/>
+                        <Clue name="Charts - FMS - MCP"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Takeoff Briefing" ExpectationTT="TT:Changes Briefed"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:CAS" ExpectationTT="TT:All Green"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:CDU" ExpectationTT="TT:Set for Takeoff"/>
+                        <Clue name="PF: PERF - PM: PROG"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:PFD/ND" ExpectationTT="TT:Set for Takeoff"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:ECIAS" ExpectationTT="TT:Set for Takeoff"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Parking Break" ExpectationTT="TT:Off"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Taxi to Runway" ExpectationTT="TT:Began"/>
+                    </Checkpoint>
+                </Block>
+
+                <Block SubjectTT="TT:Taxi">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Wing and Strobe Lights" ExpectationTT="TT:On"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Fuel XFLOW" ExpectationTT="TT:MAN and Off"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Anti-Ice" ExpectationTT="TT:As Required"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Ignition" ExpectationTT="TT:CONT"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Cabin Crew" ExpectationTT="TT:Informed"/>
+                    </Checkpoint>
+                </Block>
+            </Page>
+        </Step>
+        <Step ChecklistStepId="FLIGHT_RUNWAY">
+            <Page SubjectTT="TT:Before Takeoff">
+                <Checkpoint>
+                    <CheckpointDesc SubjectTT="TT:Takeoff Clearance" ExpectationTT="TT:Obtain"/>
+                </Checkpoint>
+                <Checkpoint>
+                    <CheckpointDesc SubjectTT="TT:Landing Lights" ExpectationTT="TT:On"/>
+                </Checkpoint>
+                <Checkpoint>
+                    <CheckpointDesc SubjectTT="TT:Transponder" ExpectationTT="TT:On"/>
+                </Checkpoint>
+                <Checkpoint>
+                    <CheckpointDesc SubjectTT="TT:TCAS" ExpectationTT="TT:TA/RA"/>
+                </Checkpoint>
+                <Checkpoint>
+                    <CheckpointDesc SubjectTT="TT:Charts" ExpectationTT="TT:SID Selected"/>
+                </Checkpoint>
+                <Checkpoint>
+                    <CheckpointDesc SubjectTT="TT:Approach Path" ExpectationTT="TT:Clear"/>
+                </Checkpoint>
+                <Checkpoint>
+                    <CheckpointDesc SubjectTT="TT:Captian's Chronograph" ExpectationTT="TT:Started"/>
+                </Checkpoint>
+            </Page>
+        </Step>
+        <Step ChecklistStepId="FLIGHT_TAKEOFF">
+            <Page SubjectTT="TT:Climb">
+                <Block SubjectTT="TT:Takeoff">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Takeoff" ExpectationTT="TT:Performed"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Gear" ExpectationTT="TT:Up"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Autopilot" ExpectationTT="TT:On"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Flaps" ExpectationTT="TT:Up On Schedule"/>
+                        <Clue name="Flaps 8 at 180 kts - Flaps up at 200kts"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Thrust" ExpectationTT="TT:Climb"/>
+                        <Clue name="Accleration ALT 1,000' AAE."/>
+                    </Checkpoint>
+                </Block>
+
+                <Block SubjectTT="TT:After Takeoff">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Fuel XFLOW" ExpectationTT="TT:Auto"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:APU and Bleeds" ExpectationTT="TT:Set"/>
+                    </Checkpoint>
+                </Block>
+
+                <Block SubjectTT="TT:10,000'">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Landing Lights and Taxi Light" ExpectationTT="TT:Off"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Seatbelt Signs" ExpectationTT="TT:As Required"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Thrust Reversers" ExpectationTT="TT:Off"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:CAS" ExpectationTT="TT:All Green"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Pressurization" ExpectationTT="TT:Checked"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Climb Speed" ExpectationTT="TT:290 Kts"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:SEC FPLN" ExpectationTT="TT:As Required"/>
+                    </Checkpoint>
+                </Block>
+
+                <Block SubjectTT="TT:Transition Altitude">
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Altimeter" ExpectationTT="TT:STD"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Terrain Radar" ExpectationTT="TT:Off"/>
+                        <Clue name="Unless above MSA"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:WX Radar Tilt and Gain" ExpectationTT="TT:Tuned"/>
+                    </Checkpoint>
+                    <Checkpoint>
+                        <CheckpointDesc SubjectTT="TT:Company Message" ExpectationTT="TT:Sent"/>
+                        <Clue name="Blocks off time, Wheels up time, ETA Actual ZFW, and any special message or reason of delay."/>
+                    </Checkpoint>
+                </Block>
+            </Page>
+        </Step>
+        <Step ChecklistStepId="FLIGHT_CRUISE">
+          <Page SubjectTT="TT:Cruise">
+              <Checkpoint>
+                  <CheckpointDesc SubjectTT="TT:Weather" ExpectationTT="TT:Recived"/>
+              </Checkpoint>
+              <Checkpoint>
+                  <CheckpointDesc SubjectTT="TT:Landing Performance Calculations" ExpectationTT="TT:Performed"/>
+              </Checkpoint>
+          </Page>
+        </Step>
+        <Step ChecklistStepId="FLIGHT_DESCENT">
+          <Page SubjectTT="TT:Descent">
+              <Checkpoint>
+                  <CheckpointDesc SubjectTT="TT:Hello" ExpectationTT="TT:World!"/>
+              </Checkpoint>
+          </Page>
+        </Step>
+        <Step ChecklistStepId="LANDING_APPROACH">
+          <Page SubjectTT="TT:Approach">
+              <Checkpoint>
+                  <CheckpointDesc SubjectTT="TT:Hello" ExpectationTT="TT:World!"/>
+              </Checkpoint>
+          </Page>
+        </Step>
+        <Step ChecklistStepId="LANDING_TOUCHDOWN">
+          <Page SubjectTT="TT:Landing">
+              <Checkpoint>
+                  <CheckpointDesc SubjectTT="TT:Hello" ExpectationTT="TT:World!"/>
+              </Checkpoint>
+          </Page>
+        </Step>
+        <Step ChecklistStepId="LANDING_TAXI_IN">
+          <Page SubjectTT="TT:Taxi to Gate">
+              <Checkpoint>
+                  <CheckpointDesc SubjectTT="TT:Hello" ExpectationTT="TT:World!"/>
+              </Checkpoint>
+          </Page>
+        </Step>
+        <Step ChecklistStepId="LANDING_GATE">
+          <Page SubjectTT="TT:Parking">
+              <Checkpoint>
+                  <CheckpointDesc SubjectTT="TT:Hello" ExpectationTT="TT:World!"/>
+              </Checkpoint>
+          </Page>
+          <Page SubjectTT="TT:Power Down">
+              <Checkpoint>
+                  <CheckpointDesc SubjectTT="TT:Hello" ExpectationTT="TT:World!"/>
+              </Checkpoint>
+          </Page>
+        </Step>
+    </Checklist.Checklist>
+</SimBase.Document>
